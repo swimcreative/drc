@@ -1,0 +1,81 @@
+// Breakpoints
+$small-screen: 480px;
+$medium-screen: 940px;
+$large-screen: 1200px;
+
+.min-width {
+  max-width: $large-screen - 100px;
+  margin:0 auto;
+}
+
+$small-max: $small-screen - 1;
+$medium-max: $medium-screen - 1;
+$large-max: $large-screen - 1;
+
+// Typography
+
+
+
+//@import url('https://fonts.googleapis.com/css?family=Merriweather:300,400,900');
+@import url('https://fonts.googleapis.com/css?family=Syncopate:700');
+
+@import url('https://fonts.googleapis.com/css?family=Archivo+Black');
+
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:700');
+
+$sync: 'Syncopate';
+
+$stack: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+@import 'assets/fonts/sfui-display/style.css';
+
+$base-font-family: $stack;
+$heading-font-family: $sync;
+$heading-alt: $stack;
+
+// Font Sizes
+$base-font-size: 20px;
+
+// Line height
+$base-line-height: 1.3;
+$heading-line-height: 1.1;
+
+// Other Sizes
+$base-border-radius: 3px;
+$base-spacing: $base-font-size;
+$small-spacing:$base-font-size / 2;
+
+// Colors
+$blue:#00b2fe;
+$green:#98c902;
+$dark-blue:#004e85;
+$darkest-blue:#243341;
+$lightest-blue:#e4eff6;
+$dark-gray:#4b5356;
+
+
+// Font Colors
+$base-font-color: lighten($dark-gray, 7%);
+$action-color: $green;
+
+// Border
+$base-border-color: rgba($dark-blue,.125);
+$base-border: 1px solid $base-border-color;
+
+// Background Colors
+$base-background-color: #fff;
+$secondary-background-color: tint($base-border-color, 75%);
+
+
+// Animations
+$base-duration: 80ms;
+$base-timing: ease;
+
+
+//Media Queries
+$mobile: "(max-width: $small-max)" !default;
+$mobile-up: "(min-width: $small-screen)" !default;
+$tablet: "(max-width: $medium-max)" !default;
+$tablet-up: "(min-width: $medium-screen)" !default;
+$desktop: "(max-width: $large-max)" !default;
+$desktop-up: "(min-width: $large-screen)" !default;
